@@ -1,2 +1,2 @@
-# csjxzhang-github.io
+# csjxzhang.github.io
 personal website
