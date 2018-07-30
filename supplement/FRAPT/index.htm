@@ -55,8 +55,7 @@
     </div>
     <nav class="collapse navbar-collapse bs-navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://oscar-lab.org">Oscar</a></li>
-        <li><a href="http://oscar-lab.org/people/~jxzhang/index.htm">MyPage</a></li>
+        <li><a href="https://csjxzhang.github.io/">MyPage</a></li>
       </ul>
     </nav>
   </div>
@@ -78,18 +77,18 @@
 <p>Developers increasingly rely on API tutorials to facilitate software development. However, it remains a challenging task for them to discover relevant API tutorial fragments explaining unfamiliar APIs. Existing supervised approaches suffer from the heavy burden of manually preparing corpus-specific annotated data and features. In this study, we propose a novel unsupervised approach, namely Fragments Recommender for APIs with PageRank and Topic model (FRAPT). FRAPT can well address two main challenges lying in the task and effectively determine relevant tutorial fragments for APIs. In FRAPT, a Fragment Parser is proposed to identify APIs in tutorial fragments and replace ambiguous pronouns and variables with related ontologies and API names, so as to address the pronoun and variable resolution challenge. Then, a Fragment Filter employs a set of nonexplanatory detection rules to remove non-explanatory fragments, thus address the non-explanatory fragment identification challenge. Finally, two correlation scores are achieved and aggregated to determine relevant fragments for APIs, by applying both topic model and PageRank algorithm to the retained fragments. Extensive experiments over two publicly open tutorial corpora show that, FRAPT improves the state-of-the-art approach by 8.77% and 12.32% respectively in terms of F-Measure. The effectiveness of key components of FRAPT is also validated.</p>
 <b>(2) Tutorial Corpora:</b>
 <p>Two publicly open tutorial are constructed by other researchers, namely McGill corpus consists of five tutorials and Android corpus is composed of four tutorials related to Android APIs. These corpora have been manually annotated into relevant and irrelevant fragments with their contained APIs. Therefore they are used as the ground truth for comparing different approaches.<br>
-The two tutorial corpora can be download here: <a href="http://cs.mcgill.ca/~swevo/icse2015/">McGill Corpus</a> and <a href="http://oscar-lab.org/people/~jxzhang/supplement/FITSEA/index.htm">Android Corpus</a>.
+The two tutorial corpora can be download here: <a href="http://cs.mcgill.ca/~swevo/icse2015/">McGill Corpus</a> and <a href="https://csjxzhang.github.io/supplement/FITSEA/">Android Corpus</a>.
 </p>
 <b>(3) The main steps of FRAPT:</b>
 <p>3.1<b> Coreference Resolution:</b> Reconcile, an automatic coreference resolution tool, is leveraged to perform pronoun resolution. The .jar file is here: <a href="http://www.cs.utah.edu/nlp/reconcile/">http://www.cs.utah.edu/nlp/reconcile/</a>, and the command line is: <i>$ java -jar reconcile-1.0.jar file1 file2 ... </i></p>
 <p>3.2<b> PageRank Algorithm:</b> PageRank algorithm attempts to evaluate the importance of each sentence through link analysis. It takes in a set of linked entities, and outputs a numerical weight for each entity to estimate their importance. The source code is here: <a href="./files/PageRank.java">PageRank</a>.</p>
 <p>3.3<b> Topic Model:</b> As a popular way to analyze a large scale of documents, topic model can be used to find semantic relationships between documents and terms. Topic model extracts several topics from document collections by mining co-occurrence terms. In this study, one type of topic model, namely Latent Dirichlet Allocation (LDA) is leveraged, and <a href="http://nlp.stanford.edu/software/tmt/tmt-0.4/">Stanford Topic Modeling Toolbox</a> is introduced to help us perform LDA.</p>
 <b>(4) The FRAPT tool:</b>
-<p>The Java Archive File is here: <a href="./files/FRAPT.jar">FRAPT</a>. The dependency packages of FRAPT can be found here: <a href="./files/lib.rar">The dependency packages</a>.</p>
+<p>The Java Archive File is here: <a href="./files/FRAPT.jar">FRAPT</a>. The dependency packages of FRAPT can be requested from Jingxuan Zhang by mailing to jxzhang@nuaa.edu.cn.</p>
 					
 					<p>If you think these materials are userful for you, please cite our paper, Thank you!</p>
 					
-					<p>If you have any question about our paper, please contact Jingxuan Zhang, E-mail: jingxuanzhang@mail.dlut.edu.cn.</p>
+					<p>If you have any question about our paper, please contact Jingxuan Zhang, E-mail: jxzhang@nuaa.edu.cn.</p>
 				</div>
 			</div>
 		</div>
@@ -99,7 +98,7 @@ The two tutorial corpora can be download here: <a href="http://cs.mcgill.ca/~swe
 
 <footer class="footer">
 	<div class="container">
-		<p class="text-muted">Jingxuan Zhang, Ph.D. Candidate at School of Software, Dalian University of Technology, Dalian, Liaoning, China </p>
+		<p class="text-muted">Last updated on Aug. 1, 2018 by Jingxuan Zhang.</p>
 	</div>
 	<div class="color_wrapper"></div>
 </footer>
